@@ -1,0 +1,14 @@
+.list {
+    list-style-type:disc;
+    font-size: 18px;
+}
+
+.item:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+
+.button {
+    margin-left: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
