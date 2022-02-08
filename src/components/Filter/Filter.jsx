@@ -3,7 +3,7 @@ import s from './Filter.module.css';
 
 function Filter({ onFilterInputHandler }) {
   return (
-    <label>
+    <label className={s.label}>
       Find contacts by name
       <input
         type="text"
@@ -11,7 +11,6 @@ function Filter({ onFilterInputHandler }) {
         pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
         title="Name may contain only letters, apostrophe, dash and spaces. 
             For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
-        required
         placeholder="John Smith"
         onInput={onFilterInputHandler}
         className={s.input}

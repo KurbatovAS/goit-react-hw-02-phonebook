@@ -1,4 +1,3 @@
-// import ReactPropTypesSecret from 'prop-types/lib/ReactPropTypesSecret';
 import React from 'react';
 import shortid from 'shortid';
 import Section from './Section/Section';

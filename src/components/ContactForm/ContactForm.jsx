@@ -3,7 +3,7 @@ import s from './ContactForm.module.css';
 
 function ContactForm({ onFormSubmit }) {
   return (
-    <form name="contact_form" onSubmit={onFormSubmit}>
+    <form name="contact_form" onSubmit={onFormSubmit} className={s.form}>
       <label className={s.label}>
         Name
         <input
