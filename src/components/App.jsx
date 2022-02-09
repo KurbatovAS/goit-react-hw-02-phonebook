@@ -65,12 +65,14 @@ class App extends React.Component {
   }
 
   removeContactHandler = e => {
-    const contactList = this.state.contacts;
     const contactToRemove = e.target.name;
-
     const contactIndex = this.findContactIndex(contactToRemove);
 
-    this.setState(contactList.splice(contactIndex, 1));
+    this.setState(prevState => ({
+      contacts: prevState.contacts.filter(
+        (contact, index) => index !== contactIndex
+      ),
+    }));
   };
 
   findContactIndex(contact) {
